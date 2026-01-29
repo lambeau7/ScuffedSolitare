@@ -1,12 +1,13 @@
+
 import java.util.*;
 
-public class Deck {
+public class deck {
   private ArrayList<card> cards = new ArrayList<>();
 
-  public Deck()
+  public deck()
   {
-    string[] suits = {"S","H","D","C"};
-    for(string s : suits) 
+    String[] suits = {"S","H","D","C"};
+    for(String s : suits) 
     {
       for(int r = 1; r <= 13; r++)
       {
