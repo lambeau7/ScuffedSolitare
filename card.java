@@ -1,9 +1,9 @@
 public class card {
   private int rank;
-  private string suit;
+  private String suit;
   private boolean faceUp;
 
-  public card(int rank, string suit)
+  public card(int rank, String suit)
   {
     this.rank = rank;
     this.suit = suit;
@@ -14,7 +14,7 @@ public class card {
   {
     return rank;
   }
-  public string getSuit()
+  public String getSuit()
   {
     return suit;
   }
@@ -26,7 +26,7 @@ public class card {
   {
     faceUp = !faceUp;
   }
-  public string toString()
+  public String toString()
   {
     return( faceUp ? rank + "" + suit : "XX");
     // HOLY HELL THIS IS AMAZING ^^^ (basically shortened a entire if statement :D
