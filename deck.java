@@ -27,5 +27,20 @@ public class deck {
   {
     return cards.remove(cards.size() - 1);
   }
+
+  public void draw(boolean mode)
+  {
+     if(mode = true)
+     {
+        for(int x = 0; x < 3; x++)
+        {
+          deal();
+        }
+     }
+     else
+     {
+        deal();
+     }
+  }
 }
     
