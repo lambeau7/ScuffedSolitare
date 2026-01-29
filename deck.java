@@ -6,7 +6,7 @@ public class deck {
 
   public deck()
   {
-    String[] suits = {"S","H","D","C"};
+    String[] suits = {"♠","♥","♦","♣"};
     for(String s : suits) 
     {
       for(int r = 1; r <= 13; r++)
@@ -26,6 +26,21 @@ public class deck {
   public card deal()
   {
     return cards.remove(cards.size() - 1);
+  }
+
+  public void draw(boolean mode)
+  {
+     if(mode = true)
+     {
+        for(int x = 0; x < 3; x++)
+        {
+          deal();
+        }
+     }
+     else
+     {
+        deal();
+     }
   }
 }
     
