@@ -1,7 +1,7 @@
+
 import java.util.*;
 
-public class deck 
-{
+public class deck {
   private ArrayList<card> cards = new ArrayList<>();
 
   public deck()
