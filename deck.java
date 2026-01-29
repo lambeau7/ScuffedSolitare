@@ -6,7 +6,7 @@ public class deck {
 
   public deck()
   {
-    String[] suits = {"S","H","D","C"};
+    String[] suits = {"♠","♥","♦","♣"};
     for(String s : suits) 
     {
       for(int r = 1; r <= 13; r++)
