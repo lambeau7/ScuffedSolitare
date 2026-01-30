@@ -5,7 +5,7 @@ public class Solitaire
     {
         deck d = new deck();
         Stack<card> hand = new Stack<card>();
-       
-
+        tableau table = new tableau();
+        foundation f = new foundation();
     }
 }
