@@ -10,6 +10,7 @@ public class foundation
             Stack<card> p = new Stack<card>();
             mf.add(p);
         }
+
     }
 
     public boolean canPlace(card x)

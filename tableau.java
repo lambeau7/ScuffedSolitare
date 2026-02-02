@@ -27,4 +27,14 @@ public class tableau
             }
         }
     }
+
+    public boolean newStack(card x, int sp)
+    {
+        if (x.getRank() == 13)
+        {
+            mycolumns.get(sp).push(x);
+            return true;
+        }
+        return false;
+    }
 }
