@@ -2,12 +2,21 @@ public class card {
   private int rank;
   private String suit;
   private boolean faceUp;
+  private String color;
 
   public card(int rank, String suit)
   {
     this.rank = rank;
     this.suit = suit;
     this.faceUp = false;
+    if(this.suit.equals("♥") || this.suit.equals("♦"))
+    {
+      color = "red";
+    }
+    else
+    {
+      color = "black";
+    }
   }
 
   public int getRank()
@@ -25,6 +34,10 @@ public class card {
   public void flip()
   {
     faceUp = !faceUp;
+  }
+  public String getColor()
+  {
+    return color;
   }
   public String toString()
   {
