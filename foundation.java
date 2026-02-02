@@ -5,6 +5,17 @@ public class foundation
 
     public foundation()
     {
-        
+        for(int lcv = 0; lcv < 4; lcv++)
+        {
+            Stack<card> p = new Stack<card>();
+            mf.add(p);
+        }
+    }
+
+    public boolean canPlace(card x)
+    {
+        boolean flag = false;
+        String s = x.getSuit();
+        return flag;
     }
 }
