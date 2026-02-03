@@ -10,12 +10,14 @@ public class foundation
             Stack<card> p = new Stack<card>();
             mf.add(p);
         }
+
     }
 
     public boolean canPlace(card x)
     {
         boolean flag = false;
         String s = x.getSuit();
+
         if(s.equals("♥"))
         {
             if(mf.get(0).size() == 0)
