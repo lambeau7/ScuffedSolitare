@@ -15,7 +15,6 @@ public class foundation
 
     public boolean canPlace(card x)
     {
-        boolean flag = false;
         String s = x.getSuit();
 
         if(s.equals("♥"))
