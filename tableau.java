@@ -40,7 +40,6 @@ public class tableau
         {
             if(x.getColor().equals("red") && x.getRank() == y.getRank() - 1)
             {
-                yes.push(x);
                 return true;
             }
             else
@@ -52,7 +51,6 @@ public class tableau
         {
             if(x.getColor().equals("black") && x.getRank() == y.getRank() - 1)
             {
-                yes.push(x);
                 return true;
             }
         }
@@ -61,6 +59,25 @@ public class tableau
     public boolean canCut(int csp, int msp, int msp2)
     {
         Stack<card> x = mycolumns.get(msp);
+        
+        Stack<card> temp = x;
+        for(int lcv = 0; lcv < csp; lcv++)
+        {
+            temp.pop();
+        }
+        card y = temp.pop();
+        if(canPlace(y, msp2) == true)
+        {
+            Stack<card> tempest = x;
+            Stack<card> xy = mycolumns.get(msp2)
+            for(int lcv = 0; lcv < csp; lcv++)
+            {
+                xy.push(x.pop());
+            }
+
+            mycolumns.set(msp2, xy);
+            mycolumns.set(msp, tempest);
+        }
         //taking a break now, atleast on this method
         //notes for steps
         //1. put supposed stack of cards you want to move into a stack(peek)
