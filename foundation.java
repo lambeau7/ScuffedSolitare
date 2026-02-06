@@ -13,7 +13,16 @@ public class foundation
 
     }
 
-    public boolean canPlace(card x)
+    public boolean haveWon()
+    {
+        if(mf.get(0).size() == 13 && mf.get(1).size() == 13 && mf.get(2).size() == 13 && mf.get(3).size() == 13)
+        {
+            return true; // O:
+        }
+        return false;
+    }
+
+    public boolean canAcePlace(card x)
     {
         String s = x.getSuit();
 
@@ -116,11 +125,6 @@ public class foundation
             }
 
             return false;
-        }
-
-        if(mf.get(0).size() == 13 && mf.get(1).size() == 13 && mf.get(2).size() == 13 && mf.get(3).size() == 13)
-        {
-            // won lol
         }
 
         return false;
