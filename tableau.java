@@ -12,6 +12,11 @@ public class tableau
         }
     }
     
+    public getCard(int x)
+    {
+        return mycolumns.get(x).peek();
+    }
+    
     public void setTable(deck d)
     {
         for(int lcv = 0; lcv < 7; lcv++)

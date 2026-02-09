@@ -11,10 +11,28 @@ public class Solitaire
         foundation f = new foundation();
         boolean wonfish = false;
 
+        )
+
         while(wonfish!= false)
         {
             hand = d.drawhand(hand);
-           
+            if(hand.peek().isFaceUp())
+            {
+                //eh
+            }
+            else
+            {
+                hand.peek().flip();
+            }
+            System.out.println("Current Card: "+ hand.peek());
+
+            for(int lcv = 0; lcv < 7; lcv++)
+            {
+                if (table.canPlace(hand.peek(), lcv) == true)
+                {
+                    
+                }
+            }
 
         }
     }
